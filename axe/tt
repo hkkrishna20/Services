@@ -1,0 +1,3924 @@
+-----------------------------------com.example.Any.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"data",
+"id",
+"impact",
+"message",
+"relatedNodes"
+})
+public class Any {
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+private Data data;
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+private String id = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private String impact = "";
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+private String message = "";
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+private List<RelatedNode> relatedNodes = new ArrayList<RelatedNode>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+public Data getData() {
+return data;
+}
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+public void setData(Data data) {
+this.data = data;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public String getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(String impact) {
+this.impact = impact;
+}
+
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+public String getMessage() {
+return message;
+}
+
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+public void setMessage(String message) {
+this.message = message;
+}
+
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+public List<RelatedNode> getRelatedNodes() {
+return relatedNodes;
+}
+
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+public void setRelatedNodes(List<RelatedNode> relatedNodes) {
+this.relatedNodes = relatedNodes;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Any_.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"data",
+"id",
+"impact",
+"message",
+"relatedNodes"
+})
+public class Any_ {
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+private Object data = null;
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+private String id = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private String impact = "";
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+private String message = "";
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+private List<Object> relatedNodes = new ArrayList<Object>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+public Object getData() {
+return data;
+}
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+public void setData(Object data) {
+this.data = data;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public String getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(String impact) {
+this.impact = impact;
+}
+
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+public String getMessage() {
+return message;
+}
+
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+public void setMessage(String message) {
+this.message = message;
+}
+
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+public List<Object> getRelatedNodes() {
+return relatedNodes;
+}
+
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+public void setRelatedNodes(List<Object> relatedNodes) {
+this.relatedNodes = relatedNodes;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Any__.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"data",
+"id",
+"impact",
+"message",
+"relatedNodes"
+})
+public class Any__ {
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+private List<String> data = new ArrayList<String>();
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+private String id = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private String impact = "";
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+private String message = "";
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+private List<Object> relatedNodes = new ArrayList<Object>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+public List<String> getData() {
+return data;
+}
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+public void setData(List<String> data) {
+this.data = data;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public String getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(String impact) {
+this.impact = impact;
+}
+
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+public String getMessage() {
+return message;
+}
+
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+public void setMessage(String message) {
+this.message = message;
+}
+
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+public List<Object> getRelatedNodes() {
+return relatedNodes;
+}
+
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+public void setRelatedNodes(List<Object> relatedNodes) {
+this.relatedNodes = relatedNodes;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Data.java-----------------------------------
+
+package com.example;
+
+import java.util.HashMap;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Data Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"contrastRatio",
+"expectedContrastRatio",
+"fgColor",
+"fontSize",
+"fontWeight",
+"missingData"
+})
+public class Data {
+
+/**
+* The Contrastratio Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("contrastRatio")
+private Integer contrastRatio = 0;
+/**
+* The Expectedcontrastratio Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("expectedContrastRatio")
+private String expectedContrastRatio = "";
+/**
+* The Fgcolor Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("fgColor")
+private String fgColor = "";
+/**
+* The Fontsize Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("fontSize")
+private String fontSize = "";
+/**
+* The Fontweight Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("fontWeight")
+private String fontWeight = "";
+/**
+* The Missingdata Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("missingData")
+private String missingData = "";
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Contrastratio Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("contrastRatio")
+public Integer getContrastRatio() {
+return contrastRatio;
+}
+
+/**
+* The Contrastratio Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("contrastRatio")
+public void setContrastRatio(Integer contrastRatio) {
+this.contrastRatio = contrastRatio;
+}
+
+/**
+* The Expectedcontrastratio Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("expectedContrastRatio")
+public String getExpectedContrastRatio() {
+return expectedContrastRatio;
+}
+
+/**
+* The Expectedcontrastratio Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("expectedContrastRatio")
+public void setExpectedContrastRatio(String expectedContrastRatio) {
+this.expectedContrastRatio = expectedContrastRatio;
+}
+
+/**
+* The Fgcolor Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("fgColor")
+public String getFgColor() {
+return fgColor;
+}
+
+/**
+* The Fgcolor Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("fgColor")
+public void setFgColor(String fgColor) {
+this.fgColor = fgColor;
+}
+
+/**
+* The Fontsize Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("fontSize")
+public String getFontSize() {
+return fontSize;
+}
+
+/**
+* The Fontsize Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("fontSize")
+public void setFontSize(String fontSize) {
+this.fontSize = fontSize;
+}
+
+/**
+* The Fontweight Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("fontWeight")
+public String getFontWeight() {
+return fontWeight;
+}
+
+/**
+* The Fontweight Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("fontWeight")
+public void setFontWeight(String fontWeight) {
+this.fontWeight = fontWeight;
+}
+
+/**
+* The Missingdata Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("missingData")
+public String getMissingData() {
+return missingData;
+}
+
+/**
+* The Missingdata Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("missingData")
+public void setMissingData(String missingData) {
+this.missingData = missingData;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Example.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Root Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"inapplicable",
+"incomplete",
+"passes",
+"testEngine",
+"testEnvironment",
+"testRunner",
+"timestamp",
+"toolOptions",
+"url",
+"violations"
+})
+public class Example {
+
+/**
+* The Inapplicable Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("inapplicable")
+private List<Inapplicable> inapplicable = new ArrayList<Inapplicable>();
+/**
+* The Incomplete Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("incomplete")
+private List<Incomplete> incomplete = new ArrayList<Incomplete>();
+/**
+* The Passes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("passes")
+private List<Pass> passes = new ArrayList<Pass>();
+/**
+* The Testengine Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("testEngine")
+private TestEngine testEngine;
+/**
+* The Testenvironment Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("testEnvironment")
+private TestEnvironment testEnvironment;
+/**
+* The Testrunner Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("testRunner")
+private TestRunner testRunner;
+/**
+* The Timestamp Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("timestamp")
+private String timestamp = "";
+/**
+* The Tooloptions Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("toolOptions")
+private ToolOptions toolOptions;
+/**
+* The Url Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("url")
+private String url = "";
+/**
+* The Violations Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("violations")
+private List<Violation> violations = new ArrayList<Violation>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Inapplicable Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("inapplicable")
+public List<Inapplicable> getInapplicable() {
+return inapplicable;
+}
+
+/**
+* The Inapplicable Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("inapplicable")
+public void setInapplicable(List<Inapplicable> inapplicable) {
+this.inapplicable = inapplicable;
+}
+
+/**
+* The Incomplete Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("incomplete")
+public List<Incomplete> getIncomplete() {
+return incomplete;
+}
+
+/**
+* The Incomplete Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("incomplete")
+public void setIncomplete(List<Incomplete> incomplete) {
+this.incomplete = incomplete;
+}
+
+/**
+* The Passes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("passes")
+public List<Pass> getPasses() {
+return passes;
+}
+
+/**
+* The Passes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("passes")
+public void setPasses(List<Pass> passes) {
+this.passes = passes;
+}
+
+/**
+* The Testengine Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("testEngine")
+public TestEngine getTestEngine() {
+return testEngine;
+}
+
+/**
+* The Testengine Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("testEngine")
+public void setTestEngine(TestEngine testEngine) {
+this.testEngine = testEngine;
+}
+
+/**
+* The Testenvironment Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("testEnvironment")
+public TestEnvironment getTestEnvironment() {
+return testEnvironment;
+}
+
+/**
+* The Testenvironment Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("testEnvironment")
+public void setTestEnvironment(TestEnvironment testEnvironment) {
+this.testEnvironment = testEnvironment;
+}
+
+/**
+* The Testrunner Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("testRunner")
+public TestRunner getTestRunner() {
+return testRunner;
+}
+
+/**
+* The Testrunner Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("testRunner")
+public void setTestRunner(TestRunner testRunner) {
+this.testRunner = testRunner;
+}
+
+/**
+* The Timestamp Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("timestamp")
+public String getTimestamp() {
+return timestamp;
+}
+
+/**
+* The Timestamp Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("timestamp")
+public void setTimestamp(String timestamp) {
+this.timestamp = timestamp;
+}
+
+/**
+* The Tooloptions Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("toolOptions")
+public ToolOptions getToolOptions() {
+return toolOptions;
+}
+
+/**
+* The Tooloptions Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("toolOptions")
+public void setToolOptions(ToolOptions toolOptions) {
+this.toolOptions = toolOptions;
+}
+
+/**
+* The Url Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("url")
+public String getUrl() {
+return url;
+}
+
+/**
+* The Url Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("url")
+public void setUrl(String url) {
+this.url = url;
+}
+
+/**
+* The Violations Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("violations")
+public List<Violation> getViolations() {
+return violations;
+}
+
+/**
+* The Violations Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("violations")
+public void setViolations(List<Violation> violations) {
+this.violations = violations;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Inapplicable.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"description",
+"help",
+"helpUrl",
+"id",
+"impact",
+"nodes",
+"tags"
+})
+public class Inapplicable {
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+private String description = "";
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+private String help = "";
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+private String helpUrl = "";
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+private String id = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private Object impact = null;
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+private List<Object> nodes = new ArrayList<Object>();
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+private List<String> tags = new ArrayList<String>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+public String getDescription() {
+return description;
+}
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+public void setDescription(String description) {
+this.description = description;
+}
+
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+public String getHelp() {
+return help;
+}
+
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+public void setHelp(String help) {
+this.help = help;
+}
+
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+public String getHelpUrl() {
+return helpUrl;
+}
+
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+public void setHelpUrl(String helpUrl) {
+this.helpUrl = helpUrl;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public Object getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(Object impact) {
+this.impact = impact;
+}
+
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+public List<Object> getNodes() {
+return nodes;
+}
+
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+public void setNodes(List<Object> nodes) {
+this.nodes = nodes;
+}
+
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+public List<String> getTags() {
+return tags;
+}
+
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+public void setTags(List<String> tags) {
+this.tags = tags;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Incomplete.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"description",
+"help",
+"helpUrl",
+"id",
+"impact",
+"nodes",
+"tags"
+})
+public class Incomplete {
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+private String description = "";
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+private String help = "";
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+private String helpUrl = "";
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+private String id = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private String impact = "";
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+private List<Node> nodes = new ArrayList<Node>();
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+private List<String> tags = new ArrayList<String>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+public String getDescription() {
+return description;
+}
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+public void setDescription(String description) {
+this.description = description;
+}
+
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+public String getHelp() {
+return help;
+}
+
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+public void setHelp(String help) {
+this.help = help;
+}
+
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+public String getHelpUrl() {
+return helpUrl;
+}
+
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+public void setHelpUrl(String helpUrl) {
+this.helpUrl = helpUrl;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public String getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(String impact) {
+this.impact = impact;
+}
+
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+public List<Node> getNodes() {
+return nodes;
+}
+
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+public void setNodes(List<Node> nodes) {
+this.nodes = nodes;
+}
+
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+public List<String> getTags() {
+return tags;
+}
+
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+public void setTags(List<String> tags) {
+this.tags = tags;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Node.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"all",
+"any",
+"html",
+"impact",
+"none",
+"target"
+})
+public class Node {
+
+/**
+* The All Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("all")
+private List<Object> all = new ArrayList<Object>();
+/**
+* The Any Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("any")
+private List<Any> any = new ArrayList<Any>();
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+private String html = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private String impact = "";
+/**
+* The None Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("none")
+private List<Object> none = new ArrayList<Object>();
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+private List<String> target = new ArrayList<String>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The All Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("all")
+public List<Object> getAll() {
+return all;
+}
+
+/**
+* The All Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("all")
+public void setAll(List<Object> all) {
+this.all = all;
+}
+
+/**
+* The Any Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("any")
+public List<Any> getAny() {
+return any;
+}
+
+/**
+* The Any Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("any")
+public void setAny(List<Any> any) {
+this.any = any;
+}
+
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+public String getHtml() {
+return html;
+}
+
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+public void setHtml(String html) {
+this.html = html;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public String getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(String impact) {
+this.impact = impact;
+}
+
+/**
+* The None Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("none")
+public List<Object> getNone() {
+return none;
+}
+
+/**
+* The None Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("none")
+public void setNone(List<Object> none) {
+this.none = none;
+}
+
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+public List<String> getTarget() {
+return target;
+}
+
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+public void setTarget(List<String> target) {
+this.target = target;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Node_.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"all",
+"any",
+"html",
+"impact",
+"none",
+"target"
+})
+public class Node_ {
+
+/**
+* The All Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("all")
+private List<Object> all = new ArrayList<Object>();
+/**
+* The Any Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("any")
+private List<Any_> any = new ArrayList<Any_>();
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+private String html = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private Object impact = null;
+/**
+* The None Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("none")
+private List<None> none = new ArrayList<None>();
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+private List<String> target = new ArrayList<String>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The All Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("all")
+public List<Object> getAll() {
+return all;
+}
+
+/**
+* The All Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("all")
+public void setAll(List<Object> all) {
+this.all = all;
+}
+
+/**
+* The Any Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("any")
+public List<Any_> getAny() {
+return any;
+}
+
+/**
+* The Any Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("any")
+public void setAny(List<Any_> any) {
+this.any = any;
+}
+
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+public String getHtml() {
+return html;
+}
+
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+public void setHtml(String html) {
+this.html = html;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public Object getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(Object impact) {
+this.impact = impact;
+}
+
+/**
+* The None Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("none")
+public List<None> getNone() {
+return none;
+}
+
+/**
+* The None Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("none")
+public void setNone(List<None> none) {
+this.none = none;
+}
+
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+public List<String> getTarget() {
+return target;
+}
+
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+public void setTarget(List<String> target) {
+this.target = target;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Node__.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"all",
+"any",
+"failureSummary",
+"html",
+"impact",
+"none",
+"target"
+})
+public class Node__ {
+
+/**
+* The All Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("all")
+private List<Object> all = new ArrayList<Object>();
+/**
+* The Any Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("any")
+private List<Any__> any = new ArrayList<Any__>();
+/**
+* The Failuresummary Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("failureSummary")
+private String failureSummary = "";
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+private String html = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private String impact = "";
+/**
+* The None Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("none")
+private List<Object> none = new ArrayList<Object>();
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+private List<String> target = new ArrayList<String>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The All Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("all")
+public List<Object> getAll() {
+return all;
+}
+
+/**
+* The All Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("all")
+public void setAll(List<Object> all) {
+this.all = all;
+}
+
+/**
+* The Any Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("any")
+public List<Any__> getAny() {
+return any;
+}
+
+/**
+* The Any Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("any")
+public void setAny(List<Any__> any) {
+this.any = any;
+}
+
+/**
+* The Failuresummary Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("failureSummary")
+public String getFailureSummary() {
+return failureSummary;
+}
+
+/**
+* The Failuresummary Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("failureSummary")
+public void setFailureSummary(String failureSummary) {
+this.failureSummary = failureSummary;
+}
+
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+public String getHtml() {
+return html;
+}
+
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+public void setHtml(String html) {
+this.html = html;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public String getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(String impact) {
+this.impact = impact;
+}
+
+/**
+* The None Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("none")
+public List<Object> getNone() {
+return none;
+}
+
+/**
+* The None Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("none")
+public void setNone(List<Object> none) {
+this.none = none;
+}
+
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+public List<String> getTarget() {
+return target;
+}
+
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+public void setTarget(List<String> target) {
+this.target = target;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.None.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"data",
+"id",
+"impact",
+"message",
+"relatedNodes"
+})
+public class None {
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+private Object data = null;
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+private String id = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private String impact = "";
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+private String message = "";
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+private List<Object> relatedNodes = new ArrayList<Object>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+public Object getData() {
+return data;
+}
+
+/**
+* The Data Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("data")
+public void setData(Object data) {
+this.data = data;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public String getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(String impact) {
+this.impact = impact;
+}
+
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+public String getMessage() {
+return message;
+}
+
+/**
+* The Message Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("message")
+public void setMessage(String message) {
+this.message = message;
+}
+
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+public List<Object> getRelatedNodes() {
+return relatedNodes;
+}
+
+/**
+* The Relatednodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("relatedNodes")
+public void setRelatedNodes(List<Object> relatedNodes) {
+this.relatedNodes = relatedNodes;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Pass.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"description",
+"help",
+"helpUrl",
+"id",
+"impact",
+"nodes",
+"tags"
+})
+public class Pass {
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+private String description = "";
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+private String help = "";
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+private String helpUrl = "";
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+private String id = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private Object impact = null;
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+private List<Node_> nodes = new ArrayList<Node_>();
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+private List<String> tags = new ArrayList<String>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+public String getDescription() {
+return description;
+}
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+public void setDescription(String description) {
+this.description = description;
+}
+
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+public String getHelp() {
+return help;
+}
+
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+public void setHelp(String help) {
+this.help = help;
+}
+
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+public String getHelpUrl() {
+return helpUrl;
+}
+
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+public void setHelpUrl(String helpUrl) {
+this.helpUrl = helpUrl;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public Object getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(Object impact) {
+this.impact = impact;
+}
+
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+public List<Node_> getNodes() {
+return nodes;
+}
+
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+public void setNodes(List<Node_> nodes) {
+this.nodes = nodes;
+}
+
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+public List<String> getTags() {
+return tags;
+}
+
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+public void setTags(List<String> tags) {
+this.tags = tags;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.RelatedNode.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"html",
+"target"
+})
+public class RelatedNode {
+
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+private String html = "";
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+private List<String> target = new ArrayList<String>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+public String getHtml() {
+return html;
+}
+
+/**
+* The Html Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("html")
+public void setHtml(String html) {
+this.html = html;
+}
+
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+public List<String> getTarget() {
+return target;
+}
+
+/**
+* The Target Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("target")
+public void setTarget(List<String> target) {
+this.target = target;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.TestEngine.java-----------------------------------
+
+package com.example;
+
+import java.util.HashMap;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Testengine Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"name",
+"version"
+})
+public class TestEngine {
+
+/**
+* The Name Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("name")
+private String name = "";
+/**
+* The Version Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("version")
+private String version = "";
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Name Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("name")
+public String getName() {
+return name;
+}
+
+/**
+* The Name Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("name")
+public void setName(String name) {
+this.name = name;
+}
+
+/**
+* The Version Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("version")
+public String getVersion() {
+return version;
+}
+
+/**
+* The Version Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("version")
+public void setVersion(String version) {
+this.version = version;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.TestEnvironment.java-----------------------------------
+
+package com.example;
+
+import java.util.HashMap;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Testenvironment Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"orientationAngle",
+"orientationType",
+"userAgent",
+"windowHeight",
+"windowWidth"
+})
+public class TestEnvironment {
+
+/**
+* The Orientationangle Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("orientationAngle")
+private Integer orientationAngle = 0;
+/**
+* The Orientationtype Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("orientationType")
+private String orientationType = "";
+/**
+* The Useragent Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("userAgent")
+private String userAgent = "";
+/**
+* The Windowheight Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("windowHeight")
+private Integer windowHeight = 0;
+/**
+* The Windowwidth Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("windowWidth")
+private Integer windowWidth = 0;
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Orientationangle Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("orientationAngle")
+public Integer getOrientationAngle() {
+return orientationAngle;
+}
+
+/**
+* The Orientationangle Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("orientationAngle")
+public void setOrientationAngle(Integer orientationAngle) {
+this.orientationAngle = orientationAngle;
+}
+
+/**
+* The Orientationtype Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("orientationType")
+public String getOrientationType() {
+return orientationType;
+}
+
+/**
+* The Orientationtype Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("orientationType")
+public void setOrientationType(String orientationType) {
+this.orientationType = orientationType;
+}
+
+/**
+* The Useragent Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("userAgent")
+public String getUserAgent() {
+return userAgent;
+}
+
+/**
+* The Useragent Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("userAgent")
+public void setUserAgent(String userAgent) {
+this.userAgent = userAgent;
+}
+
+/**
+* The Windowheight Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("windowHeight")
+public Integer getWindowHeight() {
+return windowHeight;
+}
+
+/**
+* The Windowheight Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("windowHeight")
+public void setWindowHeight(Integer windowHeight) {
+this.windowHeight = windowHeight;
+}
+
+/**
+* The Windowwidth Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("windowWidth")
+public Integer getWindowWidth() {
+return windowWidth;
+}
+
+/**
+* The Windowwidth Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("windowWidth")
+public void setWindowWidth(Integer windowWidth) {
+this.windowWidth = windowWidth;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.TestRunner.java-----------------------------------
+
+package com.example;
+
+import java.util.HashMap;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Testrunner Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"name"
+})
+public class TestRunner {
+
+/**
+* The Name Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("name")
+private String name = "";
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Name Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("name")
+public String getName() {
+return name;
+}
+
+/**
+* The Name Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("name")
+public void setName(String name) {
+this.name = name;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.ToolOptions.java-----------------------------------
+
+package com.example;
+
+import java.util.HashMap;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Tooloptions Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"reporter"
+})
+public class ToolOptions {
+
+/**
+* The Reporter Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("reporter")
+private String reporter = "";
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Reporter Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("reporter")
+public String getReporter() {
+return reporter;
+}
+
+/**
+* The Reporter Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("reporter")
+public void setReporter(String reporter) {
+this.reporter = reporter;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}
+-----------------------------------com.example.Violation.java-----------------------------------
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+/**
+* The Items Schema
+* <p>
+*
+*
+*/
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"description",
+"help",
+"helpUrl",
+"id",
+"impact",
+"nodes",
+"tags"
+})
+public class Violation {
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+private String description = "";
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+private String help = "";
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+private String helpUrl = "";
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+private String id = "";
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+private String impact = "";
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+private List<Node__> nodes = new ArrayList<Node__>();
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+private List<String> tags = new ArrayList<String>();
+@JsonIgnore
+private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+public String getDescription() {
+return description;
+}
+
+/**
+* The Description Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("description")
+public void setDescription(String description) {
+this.description = description;
+}
+
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+public String getHelp() {
+return help;
+}
+
+/**
+* The Help Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("help")
+public void setHelp(String help) {
+this.help = help;
+}
+
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+public String getHelpUrl() {
+return helpUrl;
+}
+
+/**
+* The Helpurl Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("helpUrl")
+public void setHelpUrl(String helpUrl) {
+this.helpUrl = helpUrl;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public String getId() {
+return id;
+}
+
+/**
+* The Id Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("id")
+public void setId(String id) {
+this.id = id;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public String getImpact() {
+return impact;
+}
+
+/**
+* The Impact Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("impact")
+public void setImpact(String impact) {
+this.impact = impact;
+}
+
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+public List<Node__> getNodes() {
+return nodes;
+}
+
+/**
+* The Nodes Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("nodes")
+public void setNodes(List<Node__> nodes) {
+this.nodes = nodes;
+}
+
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+public List<String> getTags() {
+return tags;
+}
+
+/**
+* The Tags Schema
+* <p>
+*
+* (Required)
+*
+*/
+@JsonProperty("tags")
+public void setTags(List<String> tags) {
+this.tags = tags;
+}
+
+@JsonAnyGetter
+public Map<String, Object> getAdditionalProperties() {
+return this.additionalProperties;
+}
+
+@JsonAnySetter
+public void setAdditionalProperty(String name, Object value) {
+this.additionalProperties.put(name, value);
+}
+
+}

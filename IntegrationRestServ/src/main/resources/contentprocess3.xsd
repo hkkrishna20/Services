@@ -1,0 +1,17 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="fileTable" type="fileTableType"/>
+  <xs:complexType name="paraType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="paraSeq"/>
+      <xs:element type="xs:string" name="content"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fileTableType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="formId"/>
+      <xs:element type="xs:string" name="formTitle"/>
+      <xs:element type="xs:float" name="versionNo"/>
+      <xs:element type="paraType" name="para" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

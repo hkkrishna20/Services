@@ -1,0 +1,44 @@
+create table Audit (
+   reqid VARCHAR(30) NOT NULL ,
+   created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at  datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   sourcecorelid  VARCHAR(30) NOT NULL,
+    processfamily  VARCHAR(30) NOT NULL,
+	 content  VARCHAR(30) NOT NULL,
+   PRIMARY KEY (reqid)
+);
+ 
+create table AuditPoint (
+   id BIGINT NOT NULL AUTO_INCREMENT,
+   created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at  datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   reqid_FK VARCHAR(30) NOT NULL,
+   transXML LONGTEXT NOT NULL,
+   auditstagecode  VARCHAR(30) NOT NULL,
+   status    VARCHAR(30) NOT NULL,
+   PRIMARY KEY (id),
+     FOREIGN KEY (reqid_FK) REFERENCES Audit(reqid)
+);
+
+create table metadata (
+   reqid VARCHAR(30) NOT NULL ,
+   created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at  datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   sourcecorelid  VARCHAR(30) NOT NULL,
+    accountNo  VARCHAR(30) NOT NULL,
+	 userID  VARCHAR(30) NOT NULL,
+   PRIMARY KEY (reqid)
+);
+ 
+create table metadataDocument (
+   docID VARCHAR(30) NOT NULL ,
+   created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at  datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   reqid_FK VARCHAR(30) NOT NULL,
+   docpath LONGTEXT NOT NULL,
+   ecmpath  VARCHAR(30) NOT NULL,
+   filenetpath    VARCHAR(30) NOT NULL,
+   PRIMARY KEY (docID),
+     FOREIGN KEY (reqid_FK) REFERENCES metadata(reqid)
+   
+);

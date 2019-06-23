@@ -1,0 +1,116 @@
+
+CREATE DATABASE 
+  IF NOT EXISTS integration;
+  USE 
+    DROP TABLE 
+    DROP TABLE IF EXISTS `integration`.`users`;
+    CREATE TABLE `integration`.`users` 
+                 ( 
+                              `username`  VARCHAR(45) NOT NULL, 
+                              `password`  VARCHAR(45) NULL, 
+                              `firstname` VARCHAR(45) NOT NULL, 
+                              `lastname`  VARCHAR(45) NULL, 
+                              `email`     VARCHAR(45) NULL, 
+                              `address`   VARCHAR(45) NULL, 
+                              `phone`     INT NULL, 
+                              PRIMARY KEY (`username`) 
+                 )
+                 
+                 
+                 
+                 CREATE TABLE Employee(
+   EMPID   INT NOT NULL AUTO_INCREMENT,
+   `username` VARCHAR(45) NOT NULL,
+  `firstname` VARCHAR(45) NOT NULL, 
+   `lastname`  VARCHAR(45) NULL, 
+   `email`     VARCHAR(45) NULL,
+   EMPAGE  INT NOT NULL,
+   SALARY BIGINT NOT NULL,
+   ADDRESS VARCHAR(20) NOT NULL,
+   PRIMARY KEY (EMPID)
+);
+
+ALTER TABLE table_name ADD column datatype;
+
+SELECT column_name(s) FROM table_name WHERE column_1 = value_1 AND column_2 = value_2;
+
+SELECT column_name AS 'Alias' FROM table_name;
+
+SELECT AVG(column_name) FROM table_name;
+
+SELECT column_name(s) FROM table_name WHERE column_name BETWEEN value_1 AND value_2;
+
+SELECT COUNT(column_name) FROM table_name;
+
+CREATE TABLE table_name (column_1 datatype, column_2 datatype, column_3 datatype);
+
+DELETE FROM table_name WHERE some_column = some_value;
+
+SELECT COUNT(*) FROM table_name GROUP BY column_name;
+
+SELECT column_name(s) FROM table_1 JOIN table_2 ON table_1.column_name = table_2.column_name;
+
+INSERT INTO table_name (column_1, column_2, column_3) VALUES (value_1, 'value_2', value_3);
+
+SELECT column_name(s) FROM table_name WHERE column_name LIKE pattern;
+
+SELECT column_name(s) FROM table_name LIMIT number;
+
+SELECT MAX(column_name) FROM table_name;
+
+SELECT MIN(column_name) FROM table_name;
+
+SELECT column_name FROM table_name WHERE column_name = value_1 OR column_name = value_2;
+
+SELECT column_name FROM table_name ORDER BY column_name ASC|DESC;
+
+SELECT column_name(s) FROM table_1 LEFT JOIN table_2 ON table_1.column_name = table_2.column_name;
+
+SELECT ROUND(column_name, integer) FROM table_name;
+
+SELECT column_name FROM table_name;
+
+SELECT DISTINCT column_name FROM table_name;
+
+SELECT SUM(column_name) FROM table_name;
+
+UPDATE table_name SET some_column = some_value WHERE some_column = some_value;
+
+SELECT column_name(s) FROM table_name WHERE column_name operator value;
+
+SELECT * FROM EMPLOYEE_TBL;
+
+SELECT EMP_ID FROM EMPLOYEE_TBL;
+
+SELECT * FROM EMPLOYEE_TBL;
+
+SELECT EMP_ID FROM EMPLOYEE_TBL;
+
+SELECT EMP_ID FROM EMPLOYEE_TBL;
+
+SELECT EMP_ID, LAST_NAME FROM EMPLOYEE_TBL;
+
+SELECT EMP_ID, LAST_NAME FROM EMPLOYEE_TBL WHERE EMP_ID = '333333333';
+
+SELECT EMP_ID, LAST_NAME FROM EMPLOYEE_TBL WHERE CITY = 'INDIANAPOLIS' ORDER BY EMP_ID;
+
+SELECT EMP_ID, LAST_NAME FROM EMPLOYEE_TBL WHERE CITY = 'INDIANAPOLIS' ORDER BY EMP_ID, LAST_NAME DESC;
+
+SELECT EMP_ID, LAST_NAME FROM EMPLOYEE_TBL WHERE CITY = 'INDIANAPOLIS' ORDER BY 1;
+
+SELECT EMP_ID, LAST_NAME FROM EMPLOYEE_TBL WHERE CITY = 'INDIANAPOLIS' ORDER BY 2, 1;
+
+SELECT COUNT(*) FROM PRODUCTS_TBL; 
+
+
+
+
+
+
+
+
+
+
+
+
+

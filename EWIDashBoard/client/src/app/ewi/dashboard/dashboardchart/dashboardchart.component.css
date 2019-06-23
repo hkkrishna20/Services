@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  a:hover {
+
+    color: black;
+  }
+  .previous {
+    color: black;
+  }  
+  .round {
+    border-radius: 50%;
+  }
+  .icon {
+    font-family:font-family;
+    font-size: 12px;
+    font-weight:700;
+
+}
+
+
+.material-icons.color_green { color: #00FF00; }
+.material-icons.color_blue { color: blue; }
+.material-icons.color_red { color: red; }
+.material-icons.color_yellow { color: yellow; }

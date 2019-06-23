@@ -1,0 +1,59 @@
+<div class="row vertical-divider">
+    <button style="margin-left: 50%" mat-raised-button (click)="toggleFlipEWI()" color="primary">Click to See EWI
+        Tracker</button>
+</div>
+<div class="row vertical-divider">
+    <div class="col-12 col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+        <div class="tp-wrapper">
+            <div class="tp-box" [@flipState]="flipEWI">
+                <div class="tp-box__side box-content  tp-box__front">
+                    <app-ewi-dashboard></app-ewi-dashboard>
+                </div>
+                <div class="tp-box__side box-content tp-box__back">
+                    <app-ewi-dashboard-dashboardchart></app-ewi-dashboard-dashboardchart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row vertical-divider">
+    <button style="margin-left: 50%" mat-raised-button (click)="toggleFlipBill()" color="primary">Click to See Billing
+        Tracker</button>
+</div>
+<div class="row vertical-divider">
+    <div class="col-12 col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+        <div class="tp-wrapper">
+            <div class="tp-box" [@flipState]="flipBill">
+                <div class="tp-box__side box-content  tp-box__front">
+                    <app-ewi-billingdetails></app-ewi-billingdetails>
+                </div>
+                <div class="tp-box__side box-content  tp-box__back">
+                    <app-ewi-billingdetails-billchart></app-ewi-billingdetails-billchart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="row vertical-divider">
+    <button style="margin-left: 50%" mat-raised-button (click)="toggleFlipSow()" color="primary">Click to See Sow
+        Tracker</button>
+</div>
+<div class="row vertical-divider">
+    <div class="col-12 col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+        <div class="tp-wrapper">
+            <div class="tp-box" [@flipState]="flipSow">
+                <div class="tp-box__side  box-content tp-box__front">
+                    <app-ewi-sowcomp></app-ewi-sowcomp>
+                </div>
+                <div class="tp-box__side box-content tp-box__back">
+                    <app-ewi-sowcomp-sowchart></app-ewi-sowcomp-sowchart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>

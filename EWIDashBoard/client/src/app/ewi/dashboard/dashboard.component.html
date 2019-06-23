@@ -1,0 +1,77 @@
+<mat-card-content>
+	<mat-horizontal-stepper [linear]="isLinear" #stepper>
+		<mat-step [stepControl]="firstFormGroup">
+			<form [formGroup]="firstFormGroup" align="center">
+				<ng-template matStepLabel>{{buLeadLable}}</ng-template>
+				<mat-form-field>
+					<mat-select formControlName="firstCtrl" placeholder="BU Lead">
+						<mat-option *ngFor="let state of BULead" [value]="state">{{state}}</mat-option>
+					</mat-select>
+				</mat-form-field>
+				<div>
+					<button mat-button matStepperNext (click)="buLeadLableF()">Next</button>
+				</div>
+			</form>
+		</mat-step>
+		<mat-step [stepControl]="secondFormGroup">
+			<form [formGroup]="secondFormGroup" align="center">
+				<ng-template matStepLabel>{{groupLeadLable}}</ng-template>
+				<mat-form-field>
+
+					<mat-select formControlName="secondCtrl" placeholder="Group Lead">
+						<mat-option *ngFor="let state of GroupLead" [value]="state">{{state}}</mat-option>
+					</mat-select>
+				</mat-form-field>
+				<div>
+					<button mat-button matStepperPrevious (click)="groupLeadLableF()">Back to BU Lead</button>
+					<button mat-button matStepperNext (click)="groupLeadLableF()">Next</button>
+					<button *ngIf="show" mat-button color="primary" (click)="back()"><i
+							class="material-icons">settings_backup_restore </i>Back</button>
+				</div>
+			</form>
+		</mat-step>
+
+		<mat-step [stepControl]="thirdFormGroup">
+
+			<form [formGroup]="thirdFormGroup" align="center">
+				<ng-template matStepLabel>{{dateLabel}} {{monthandYear}} {{monthandYear1}} </ng-template>
+
+
+				<mat-form-field>
+					<input matInput [matDatepicker]="dp" placeholder="Month and Year" [formControl]="date">
+					<mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+					<mat-datepicker #dp startView="multi-year" (yearSelected)="chosenYearHandler($event)"
+						(monthSelected)="chosenMonthHandler($event, dp)" panelClass="example-month-picker">
+					</mat-datepicker>
+					<span matPrefix>&nbsp;</span>
+				</mat-form-field>&nbsp;&nbsp;&nbsp;
+				<mat-form-field>
+					<input matInput [matDatepicker]="dp1" placeholder="Month and Year" [formControl]="date1">
+					<mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
+					<mat-datepicker #dp1 startView="multi-year" (yearSelected)="chosenYearHandler1($event)"
+						(monthSelected)="chosenMonthHandler1($event, dp1)" panelClass="example-month-picker1">
+					</mat-datepicker>
+				</mat-form-field>
+
+				<div>
+					<div>
+						<button mat-button matStepperPrevious>Back to Group Lead</button>
+						<button mat-button matStepperNext (click)="test()">Next/Refresh</button>
+						<button *ngIf="show" mat-button color="primary" (click)="back()"><i
+								class="material-icons">settings_backup_restore </i>Back</button>
+
+					</div>
+				</div>
+			</form>
+		</mat-step>
+		<mat-step>
+			<ng-template matStepLabel>Done</ng-template>
+			<div align="center">
+				<button mat-button matStepperPrevious>Change Month and Year</button>
+				<button mat-button (click)="stepper.reset()">Reset</button>
+				<button *ngIf="show" mat-button color="primary" (click)="back()"><i
+						class="material-icons">settings_backup_restore </i>Back</button>
+			</div>
+		</mat-step>
+	</mat-horizontal-stepper>
+</mat-card-content>

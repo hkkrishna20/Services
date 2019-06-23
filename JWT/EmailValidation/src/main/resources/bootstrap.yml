@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: EmailValidation
+  cloud:
+    config:
+      uri: http://localhost:8888

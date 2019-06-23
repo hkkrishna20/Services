@@ -1,0 +1,32 @@
+
+
+
+<fileTable>
+<formId>ACCOOPN01</formId>
+<formTitle>Acc Opening Form </formTitle>
+<versionNo>1.11</versionNo>
+<ParaType>
+
+<paraSeq>1</paraSeq>
+<content>Good tools make application development quicker and easier to maintain than if you did everything by hand.dfsdfsdf</content>
+</ParaType>
+<ParaType>
+
+<paraSeq>2</paraSeq>
+<content>Good tools make application development quicker and easier to maintain than if you did everything by hand.dfsdfsdf</content>
+</ParaType>
+<ParaType>
+
+<paraSeq>4</paraSeq>
+<content>Good tools make application development quicker and easier to maintain than if you did everything by hand.dfsdfsdf</content>
+</ParaType>
+<ParaType>
+
+<paraSeq>3</paraSeq>
+<content>Good tools make application development quicker and easier to maintain than if you did everything by hand.dfsdfsdf</content>
+</ParaType>
+<ParaType>
+<paraSeq>5</paraSeq>
+<content>Good tools make application development quicker and easier to maintain than if you did everything by hand.dfsdfsdf</content>
+</ParaType>
+</fileTable>

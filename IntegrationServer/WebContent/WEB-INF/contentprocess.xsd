@@ -1,0 +1,20 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="wc" type="wcType"/>
+  <xs:complexType name="contentTsType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="id"/>
+      <xs:element type="xs:string" name="formId"/>
+      <xs:element type="xs:string" name="content"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="headerType">
+    <xs:sequence>
+      <xs:element type="contentTsType" name="contentTs" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wcType">
+    <xs:sequence>
+      <xs:element type="headerType" name="header"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

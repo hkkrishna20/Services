@@ -1,0 +1,31 @@
+<mat-card-content>
+	<mat-form-field>
+		<input matInput [matDatepicker]="dp" placeholder="Month and Year" [formControl]="date" (blur)="test()"
+			(dateChange)="addEvent('change', $event)">
+		<mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+		<mat-datepicker #dp startView="multi-year" (yearSelected)="chosenYearHandler($event)"
+			(monthSelected)="chosenMonthHandler($event, dp)" panelClass="example-month-picker">
+		</mat-datepicker>
+	</mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
+	<mat-form-field>
+		<select matNativeControl placeholder="Search" (change)="lob()" [(ngModel)]="selectedVal" name="selecti">
+			<option value="" selected></option>
+			<option *ngFor="let selectiitem of selecti" [value]="selectiitem.value">
+				{{selectiitem.viewValue}}
+			</option>
+		</select>
+	</mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
+	<mat-form-field>
+		<mat-select matNativeControl placeholder="Directors/LOB/Managers" [(ngModel)]="accountVal" name="account"
+			multiple>
+			<mat-option *ngFor="let item of account" [value]="item.value">
+				{{item.viewValue}}
+			</mat-option>
+		</mat-select>
+	</mat-form-field>
+	<mat-card-actions>
+
+	<button mat-button mat-raised-button color="primary" (click)="selectedList(accountVal)">Refresh</button>
+	</mat-card-actions>
+
+</mat-card-content>

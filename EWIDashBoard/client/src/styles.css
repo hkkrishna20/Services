@@ -1,0 +1,48 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* body {  */
+  /* background-image:url('./assets/images/cgi.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;  */
+  
+
+/* You can add global styles to this file, and also import other style files */
+/**
+ * Applies styles for users in high contrast mode. Note that this only applies
+ * to Microsoft browsers. Chrome can be included by checking for the `html[hc]`
+ * attribute, however Chrome handles high contrast differently.
+ * @param target Which kind of high contrast setting to target. Defaults to `active`, can be
+ *    `white-on-black` or `black-on-white`.
+ */
+/* Theme for the ripple elements.*/
+/* stylelint-disable material/no-prefixes */
+/* stylelint-enable */
+/*!
+ * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+ @-ms-viewport {
+  width: device-width;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0; padding: 0;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .app-main {
+      flex-direction: column;
+  }
+}
+

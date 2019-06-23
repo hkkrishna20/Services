@@ -1,0 +1,18 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ContentTab" type="ContentTabType"/>
+  <xs:complexType name="ContentType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="contentId"/>
+      <xs:element type="xs:string" name="formId"/>
+      <xs:element type="xs:string" name="formTitle"/>
+      <xs:element type="xs:float" name="versionNo"/>
+      <xs:element type="xs:short" name="paraSeq"/>
+      <xs:element type="xs:string" name="content"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ContentTabType">
+    <xs:sequence>
+      <xs:element type="ContentType" name="Contents" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

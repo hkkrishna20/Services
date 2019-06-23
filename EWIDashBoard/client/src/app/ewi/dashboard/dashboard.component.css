@@ -1,0 +1,21 @@
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  a:hover {
+    color: black;
+  }
+  .previous {
+    color: black;
+  }  
+  .round {
+    border-radius: 50%;
+  }
+  .icon {
+    font-family:font-family;
+    font-size: 12px;
+    font-weight:700;
+
+}

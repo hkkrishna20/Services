@@ -1,0 +1,19 @@
+{
+    "/springjwt/*": {
+        "target": "https://localhost:8443/ewidashboard",
+        "secure": false
+    },
+    "/oauth/*": {
+        "target": "https://localhost:8443/ewidashboard",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    },
+    "/ewidashboard/*": {
+        "target": "https://localhost:8443/ewidashboard",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+
+}

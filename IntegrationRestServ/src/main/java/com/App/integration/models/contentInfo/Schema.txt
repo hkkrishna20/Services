@@ -1,0 +1,40 @@
+FileInfo -- Table
+---------
+FileId -- auto generated Id PK
+FormId
+Form title
+Version No
+contentId -- FK  
+
+
+
+ContentInfo -- Tble
+contentId -- auto generated PK
+Paraseq
+Paragraph / Content
+
+
+ContentId    Paraseq   content
+    1            1       para1
+    2            2       para2
+
+    3             1       para1
+
+<FileInfo>
+	<FileId>1</FileId>
+	<FormId>ACCOOPN01</FormId>
+	<Form title>Account opening Form</Form title>
+	<Version No>V1.1</Version No>
+	<content>
+		<para>
+			<paraseq>1</paraseq>
+			<content>para1</content>
+		</para>
+		<para>
+			<paraseq>2</paraseq>
+			<content>para2</content>
+		</para>
+
+	</content>
+	
+</FileInfo>

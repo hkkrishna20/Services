@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urn://com.cgi.services/schema" xmlns:tns1="http://www.springframework.org/spring-ws/samples/mtom"
+	xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:tns="urn://com.cgi.services/schema">
+	<xs:element name="source" type="tns:sourceType" />
+	<xs:complexType name="formDetailsType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="formId" />
+			<xs:element type="xs:string" name="formTitle" />
+			<xs:element type="xs:string" name="formSeq" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="headerType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="requestId" />
+			<xs:element type="xs:dateTime" name="requestTimeStamp" />
+			<xs:element type="xs:string" name="parentId" />
+			<xs:element type="xs:string" name="templateId" />
+			<xs:element type="xs:string" name="productFamily" />
+			<xs:element name="testType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="FormDeterminationServie" />
+						<xs:enumeration value="FormCreationService" />
+						<xs:enumeration value="FormSplitterService" />
+						<xs:enumeration value="FormMergeService" />
+						<xs:enumeration value="SourceFormGenerationService" />
+						<xs:enumeration value="InterfaceService" />
+						<xs:enumeration value="RoutingService" />
+
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element type="xs:string" name="userId" />
+			<xs:element type="xs:string" name="password" />
+			<xs:element type="xs:string" name="environment" />
+			<xs:element type="tns:formDetailsType" name="formDetails"
+				maxOccurs="unbounded" minOccurs="0" />
+			<xs:element type="xs:string" name="channel" minOccurs="0" />
+			<xs:element type="xs:string" name="docId" minOccurs="0" />
+			<xs:element type="xs:string" name="docPathUrl" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MergeDetailsType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="docId" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="splitDetailsType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="docId" />
+			<xs:element type="xs:int" name="startPageNo" />
+			<xs:element type="xs:int" name="endPageNo" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="appDetailsType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="fullName" />
+			<xs:element type="xs:string" name="addressLine1" />
+			<xs:element type="xs:string" name="addressLine2"
+				minOccurs="0" />
+			<xs:element type="xs:string" name="zipCode" />
+			<xs:element type="xs:string" name="phoneNumber" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="coappDetailsType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="fullName" />
+			<xs:element type="xs:string" name="addressLine1" />
+			<xs:element type="xs:string" name="addressLine2"
+				minOccurs="0" />
+			<xs:element type="xs:string" name="zipCode" />
+			<xs:element type="xs:string" name="phoneNumber" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="bodyType">
+		<xs:sequence>
+			<xs:element type="tns:MergeDetailsType" name="MergeDetails"
+				minOccurs="0" />
+			<xs:element type="tns:splitDetailsType" name="splitDetails"
+				minOccurs="0" />
+			<xs:element name="lineOfBusiness">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Lending" />
+						<xs:enumeration value="Deposits" />
+						<xs:enumeration value="CreditCards" />
+						<xs:enumeration value="Services" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element type="tns:appDetailsType" name="appDetails" />
+			<xs:element type="tns:coappDetailsType" name="coappDetails"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packageType">
+		<xs:sequence>
+			<xs:element type="tns:headerType" name="header" />
+			<xs:element type="tns:bodyType" name="body" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="sourceType">
+		<xs:sequence>
+			<xs:element type="tns:packageType" name="package" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:element name="IntegrationRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source" type="tns:sourceType"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="IntegrationResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source" type="tns:sourceType">
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="DocFetchRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source" type="tns:sourceType"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DocFetchResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source" type="tns:sourceType"></xs:element>
+				<xs:element name="arg0" type="xs:base64Binary"
+					xmime:expectedContentTypes="application/octet-stream" minOccurs="0" />
+				<xs:element name="a" minOccurs="0" type="xs:base64Binary" />
+				<xs:element type="xs:string" name="base64EncodedString" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,74 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:sws="http://www.springframework.org/schema/web-services"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/web-services
+   http://www.springframework.org/schema/web-services/web-services-2.0.xsd
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<context:property-placeholder location="classpath:config.properties"/>
+	<context:annotation-config />
+	<context:component-scan base-package="com.cgi" />
+	<bean id="wcService" class="com.cgi.integration.service.WcServiceImpl" />
+	<sws:annotation-driven />
+	<bean
+		class="org.springframework.ws.server.endpoint.adapter.GenericMarshallingMethodEndpointAdapter">
+		<constructor-arg ref="marshaller" />
+	</bean>
+	<sws:dynamic-wsdl id="integrationService"
+		portTypeName="IntegrationWeb" locationUri="/"
+		targetNamespace="urn://com.cgi.services/schema">
+		<sws:xsd location="/WEB-INF/source.xsd" />
+	</sws:dynamic-wsdl>
+
+	<bean id="marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+
+		<property name="contextPath" value="com.cgi.integration.schema" />
+		<property name="mtomEnabled" value="true" />
+	</bean>
+	<bean id="messageReceiver"
+		class="org.springframework.ws.soap.server.SoapMessageDispatcher">
+		<property name="endpointAdapters">
+			<list>
+				<ref bean="defaultMethodEndpointAdapter" />
+			</list>
+		</property>
+	</bean>
+	<bean id="soapMessageFactory" class="javax.xml.soap.MessageFactory"
+		factory-method="newInstance" />
+	<bean id="saajMessageFactory" class="org.springframework.ws.soap.saaj.SaajSoapMessageFactory">
+		<constructor-arg ref="soapMessageFactory" />
+	</bean>
+	<bean id="defaultMethodEndpointAdapter"
+		class="org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter">
+		<property name="methodArgumentResolvers">
+			<list>
+				<!-- Be careful here! You might need to add more processors if you do 
+					more than webservices! -->
+				<ref bean="marshallingPayloadMethodProcessor" />
+			</list>
+		</property>
+		<property name="methodReturnValueHandlers">
+			<list>
+				<ref bean="marshallingPayloadMethodProcessor" />
+			</list>
+		</property>
+	</bean>
+	<bean id="marshallingPayloadMethodProcessor"
+		class="org.springframework.ws.server.endpoint.adapter.method.MarshallingPayloadMethodProcessor">
+		<constructor-arg ref="marshaller" />
+	</bean>
+
+	<bean id="jaxb2Marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+		<property name="packagesToScan">
+			<list>
+				<!-- List of java packages that contain the jaxb generated classes -->
+				<value>com.cgi.integration.models</value>
+				<value>com.cgi.integration.schema</value>
+
+			</list>
+		</property>
+	</bean>
+</beans>

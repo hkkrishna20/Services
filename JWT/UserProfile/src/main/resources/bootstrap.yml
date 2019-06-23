@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: UserProfile
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+#        
+#server.port=7000
+#spring.application.name=UserProfile
+#spring.profiles.active= native
+#
+#
+#spring.cloud.config.hostname = ConfigServer
+#spring.cloud.config.port = 8888
+#spring.cloud.config.uri = http://localhost:8888
+#spring.cloud.config.fail-fast= false
+#spring.cloud.config.discovery.enabled = true
+#spring.cloud.config.discovery.service-id: ConfigServer
+
+        

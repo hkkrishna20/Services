@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="urn://com.cgi.springboot" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	targetNamespace="urn://com.cgi.springboot">
+
+	<wsdl:types>
+		<xs:schema targetNamespace="urn://com.cgi.springboot">
+			<xs:element name="CustomerRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="xs:string" name="CustomerName" />
+						<xs:element type="xs:string" name="CustomerAccountNo" />
+						<xs:element type="xs:string" name="Salary" />
+						<xs:element type="xs:string" name="RequestedAmount" />
+						<xs:element type="xs:string" name="LoanOfferId" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CustomerResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="xs:string" name="customerName" />
+						<xs:element type="xs:string" name="LoanApplicationNumber" />
+						<xs:element type="xs:string" name="Status" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</wsdl:types>
+
+
+	<!--Define input and output parameters -->
+	<wsdl:message name="CustomerRequest">
+		<wsdl:part name="in" element="tns:CustomerRequest" />
+	</wsdl:message>
+	<wsdl:message name="CustomerResponse">
+		<wsdl:part name="out" element="tns:CustomerResponse" />
+	</wsdl:message>
+
+	<!--Define port definition -->
+	<wsdl:portType name="SOATestEndpoint">
+		<wsdl:operation name="CustomerOffers">
+			<wsdl:input message="tns:CustomerRequest" />
+			<wsdl:output message="tns:CustomerResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<!--Bind Soap operation and service -->
+	<wsdl:binding name="SOATestBinding" type="tns:SOATestEndpoint">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="CustomerOffers">
+			<soap:operation soapAction="urn://com.cgi.springboot"
+				style="document" />
+			<wsdl:input>
+				<soap:body parts="in" use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="out" use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<!--Define service -->
+	<wsdl:service name="SOATestEndpointService">
+		<wsdl:port name="SOATestEndpoint" binding="tns:SOATestBinding">
+			<soap:address location="http://localhost:8141/Customeroffers/ws/CustomerService" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
