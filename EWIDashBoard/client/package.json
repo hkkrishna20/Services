@@ -41,7 +41,7 @@
     "flag-icon-css": "^3.3.0",
     "font-awesome": "^4.7.0",
     "highcharts": "^7.0.3",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.24.0",
     "mutationobserver-shim": "^0.3.3",
