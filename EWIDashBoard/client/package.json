@@ -37,7 +37,7 @@
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
     "core-js": "^2.6.5",
-    "express-jwt": "^5.3.1",
+    "express-jwt": "^6.0.0",
     "flag-icon-css": "^3.3.0",
     "font-awesome": "^4.7.0",
     "highcharts": "^7.0.3",
